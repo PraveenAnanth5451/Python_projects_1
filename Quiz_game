@@ -1,0 +1,55 @@
+print("Welcome to my Computer Game !")
+
+playing = input("Do you want to play ??")
+
+if playing.lower()!="yes":
+    quit()
+
+print("Okay ! Let's Play :)")
+score =0
+
+answer = input("what does 'CPU' stands for? ")
+if answer.title() == "Central Processing Unit":
+    print("Correct answer ")
+    score += 1
+else:
+    print("incorrect answer")
+
+answer = input("what does 'GPU' stands for? ")
+if answer.title() == "Graphics Processing Unit":
+    print("Correct answer ")
+    score += 1
+else:
+    print("incorrect answer")
+
+answer = input("what does 'ROM' stands for? ")
+if answer.title() == "Read Only Memory":
+    print("Correct answer ")
+    score += 1
+else:
+    print("incorrect answer")
+
+answer = input("what does 'IPS' stands for? ")
+if answer.title() == "Indian Police Service":
+    print("Correct answer ")
+    score += 1
+else:
+    print("incorrect answer")
+
+answer = input("what does 'B.Tech' stands for? ")
+if answer.title() == "Bachelor Of Technology":
+    print("Correct answer ")
+    score += 1
+else:
+    print("incorrect answer")
+
+answer = input("what does 'IAS'  stands for? ")
+if answer.title() == "Indian Administrative Service":
+    print("Correct answer ")
+    score += 1
+else:
+    print("incorrect answer")
+
+print(f"\nYou got {score} questions correct")
+print(f"\nYou got {(score/6)*100} %.")
+
